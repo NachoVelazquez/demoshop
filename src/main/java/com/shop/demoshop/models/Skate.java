@@ -8,6 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Skate {
+
     private Ejes ejes;
     private Tabla tabla;
     private Lija lija;
