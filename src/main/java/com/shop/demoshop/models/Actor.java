@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public abstract class  Actor {
+public abstract class Actor {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Column(name = "ID")
@@ -35,5 +35,4 @@ public abstract class  Actor {
         @Column(name = "FECHA_CREACION", nullable = false)
         @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
         private Date creationDate;
-    }
 }
