@@ -1,2 +1,5 @@
-package com.shop.demoshop.models;public enum Abrasion {
+package com.shop.demoshop.models;
+
+public enum Abrasion {
+    Grueso,Medio,Fino
 }
