@@ -2,6 +2,7 @@ package com.shop.demoshop.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,7 +10,8 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Ejes {
-
+    @Id
+    private Long id_eje;
     @Column(name = "anchura" , nullable = false)
     private int anchura;
     @Column(name = "material", nullable = false)
