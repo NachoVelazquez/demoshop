@@ -10,7 +10,7 @@ import java.util.List;
 
 
 @Repository
-public interface LijaRepo extends JpaRepository<Tabla, Integer>{
+public interface LijaRepo extends JpaRepository<Lija, Integer>{
 
     @Query("select l from Lija l where l.marcas=:marcas")
     public List<Lija> findByMarcas(@Param("marcas") Marcas marcas);

@@ -12,12 +12,12 @@ import java.util.List;
 
 
 @Repository
-public interface RuedasRepo extends JpaRepository<Tabla, Integer>{
+public interface RuedasRepo extends JpaRepository<Ruedas, Integer>{
 
     @Query("select r from Ruedas r where r.medida=:medida")
-    public List<Ruedas> findByAnchura(@Param("medida") int medida);
+    public List<Ruedas> findByMedida(@Param("medida") int medida);
 
     @Query("select r from Ruedas r where r.dureza=:medida")
-    public List<Ruedas> findByAnchura(@Param("dureza") Dureza dureza);
+    public List<Ruedas> findByDureza(@Param("dureza") Dureza dureza);
 
 }

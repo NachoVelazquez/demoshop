@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 public class Lija {
     @Id
-    private int id;
+    private int id_lija;
     @Column(name = "marca", nullable = false)
     private Marcas marca;
     @Column(name = "abrasion", nullable = false)
