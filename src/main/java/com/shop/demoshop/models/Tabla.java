@@ -11,9 +11,9 @@ import lombok.Setter;
 @Setter
 public class Tabla {
     @Id
-    private Long id;
+    private int id;
     @Column(name="anchura", nullable= false)
-    private int anchura;
+    private float anchura;
     @Column(name="material", nullable= false)
     private String material;
     @Column(name="Fibra_Vidrio", nullable= false)

@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 public class Rodamientos {
     @Id
-    private Long id_rodam;
+    private int id_rodam;
     @Column(name = "categoria", nullable = false)
     private Categoria categoria;
     @Column(name = "marca", nullable = false)

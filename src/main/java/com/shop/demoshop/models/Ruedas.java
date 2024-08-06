@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 public class Ruedas {
     @Id
-    private Long id_rueda;
+    private int id_rueda;
     @Column(name = "medida", nullable = false)
     private int medida;
     @Column(name = "dureza", nullable = false)

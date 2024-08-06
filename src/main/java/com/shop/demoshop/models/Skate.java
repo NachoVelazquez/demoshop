@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 public class Skate {
     @Id
-    private Long id_skate;
+    private int id_skate;
     @Column(name = "ejes", nullable = false)
     private Ejes ejes;
     @Column(name = "tabla", nullable = false)

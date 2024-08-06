@@ -11,7 +11,7 @@ import lombok.Setter;
 @Getter
 public class Ejes {
     @Id
-    private Long id_eje;
+    private int id_eje;
     @Column(name = "anchura" , nullable = false)
     private int anchura;
     @Column(name = "material", nullable = false)
