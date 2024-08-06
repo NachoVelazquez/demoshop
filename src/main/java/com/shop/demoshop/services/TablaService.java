@@ -6,11 +6,11 @@ import org.springframework.util.Assert;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.shop.demoshop.models.Tabla;
 import com.shop.demoshop.repository.TablaRepo;
 
-import jakarta.transaction.Transactional;
 
 
 @Service
@@ -33,7 +33,6 @@ public class TablaService {
         Assert.notNull(tabla, "la tabla no debe ser null");
         Assert.isTrue(tabla.getId() != 0,"La tabla que se desea eliminar no esta registrado");
         Assert.isTrue(this.tablaRepo.existsById(tabla.getId()),"La tabla no existe");
-
         this.tablaRepo.delete(tabla);
     }
 
